@@ -41,6 +41,19 @@ This project details the deployment and analysis of a keylogging exploit using t
 
 - This configuration listens for the reverse TCP connection from the payload executed on the target machine.
 
+***Payload Delivery via SET:***
+- Use the Social Engineering Toolkit (SET) within Kali Linux VM to conduct a Mass Email Attack, sending a phishing email containing a link to the hosted payload (AdvancedDentalPracticeFindings.exe).
+- The email being crafted aligns with the pretext scenario, making it appear to be legitimate communication related to dental research.
+
+***Execution on Target VM:***
+- The user on the Windows VM receives the phishing email.
+- Upon clicking the link and executing the downloaded file, the Windows VM initiates a reverse TCP connection to the Kali Linux VM.
+
+***Execution on Attacker VM:***
+- Check listener in msfconsole for successful reverse TCP connection.
+- Use ```keyscan_start``` command in meterpreter to initiate keylogging process.
+- Use ```keyscan_dump``` command in meterpreter to display the keystrokes that have been captured.
+
 ## Step-by-Step Deployment
 
 ***Payload creation with msfvenom***
