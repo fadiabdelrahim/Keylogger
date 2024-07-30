@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project details the deployment and analysis of a keylogging exploit using the Metasploit Framework. The project aims to demonstrate the process of unauthorized access and keystroke monitoring on a target machine, emphasizing the critical importance of secure coding practices and regular system updates. By leveraging the comprehensive tools provided by Metasploit, including msfvenom for payload creation and the Social-Engineer Toolkit (SET) for social engineering attacks, this project simulates a real-world cyber-attack scenario. The methodology encompasses setting up a controlled lab environment with virtual machines, configuring network settings, and executing a phishing campaign to deliver the payload. This report provides a step-by-step account of the entire process,
+This project details the deployment and analysis of a keylogging exploit using the Metasploit Framework. The project aims to demonstrate the process of unauthorized access and keystroke monitoring on a target machine, emphasizing the critical importance of secure coding practices and regular system updates. By leveraging the comprehensive tools provided by Metasploit, including msfvenom for payload creation and the Social-Engineer Toolkit (SET) for social engineering attacks, this project simulates a real-world cyber-attack scenario. The methodology encompasses setting up a controlled lab environment with virtual machines, configuring network settings, and executing a phishing campaign to deliver the payload. This report provides a step-by-step account of the entire process.
 
 ## Choice of Exploit
 
