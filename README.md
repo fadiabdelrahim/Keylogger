@@ -6,7 +6,7 @@ This project details the deployment and analysis of a keylogging exploit using t
 
 ## Choice of Exploit
 
-- I utilized the Metasploit Framework to deploy a keylogger. This method was chosen because Metasploit offers a comprehensive set of tools for exploiting vulnerabilites and deploying payloads like keyloggers. It demonstrates the process of gaining unauthorized access then monitoring keystrokes on a target machine, emphasizing the importance of secure coding and regurlar system updates.
+I utilized the Metasploit Framework to deploy a keylogger. This method was chosen because Metasploit offers a comprehensive set of tools for exploiting vulnerabilites and deploying payloads like keyloggers. It demonstrates the process of gaining unauthorized access then monitoring keystrokes on a target machine, emphasizing the importance of secure coding and regurlar system updates.
 
 ## Emulations Setup
 
