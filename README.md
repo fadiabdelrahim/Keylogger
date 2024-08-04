@@ -57,111 +57,75 @@ I utilized the Metasploit Framework to deploy a keylogger. This method was chose
 ## Step-by-Step Deployment
 
 ***Payload creation with msfvenom***
-- Create the reverse TCP payload using msfvenom
+<div align="center">Create the reverse TCP payload using msfvenom</div>
+<p align="center"><img src=images/Picture1.jpg></p>
 
-![image](https://github.com/user-attachments/assets/8c38f1fd-a159-42b6-83c6-df610d2e3fc0)
+---
 
-***Use Python to create HTTP server to host payload
+***Use Python to create HTTP server to host payload***
+<p align="center"><img src=images/Picture2.jpg></p>
 
-  ```python3 -m http.server```
-
-![image](https://github.com/user-attachments/assets/75f201f0-9d13-4771-967a-7068a2a3365b)
+---
 
 ***Setup a listner using msfconsole***
-- Run msfconsole
+<div align="center">Run msfconsole</div>
+<p align="center"><img src=images/Picture3.jpg></p>
+<div align="center">Use exploit/multi/handler</div>
+<p align="center"><img src=images/Picture4.jpg></p>
+<div align="center">Set payload windows/meterpreter/reverse_tcp</div>
+<p align="center"><img src=images/Picture5.jpg></p>
+<div align="center">Use show options command to display required payload options</div>
+<p align="center"><img src=images/Picture6.jpg></p>
+<div align="center">Set lhost to 192.168.100.4</div>
+<p align="center"><img src=images/Picture7.jpg></p>
+<div align="center">Use show options command to display updated payload options</div>
+<p align="center"><img src=images/Picture8.jpg></p>
+<div align="center">set lport to 5555 (port used by payload)</div>
+<p align="center"><img src=images/Picture9.jpg></p>
+<div align="center">Use show options command to display updated payload options</div>
+<p align="center"><img src=images/Picture10.jpg></p>
+<div align="center">Run the exploit</div>
+<p align="center"><img src=images/Picture11.jpg></p>
 
-![image](https://github.com/user-attachments/assets/2c82b8ab-9631-4f1c-9d7a-08ebac496d16)
-
-- Use exploit/multi/handler
-
-![image](https://github.com/user-attachments/assets/ce44fda2-5746-40a9-ad8b-9c5bad4b97bc)
-
-- Set payload windows/meterpreter/reverse_tcp
-
-![image](https://github.com/user-attachments/assets/2c7681d9-7d49-4965-934b-89ca71167d71)
-
-- Use show options command to display required payload options
-
-![image](https://github.com/user-attachments/assets/c8bc2005-e16a-4b59-85ce-742bb9d4f128)
-
-- Set lhost to 192.168.100.4
-
-![image](https://github.com/user-attachments/assets/33ff1650-c4d3-4bf3-b925-b2e2e245b990)
-
-- Use show options command to display updated payload options
-
-![image](https://github.com/user-attachments/assets/1418ef1c-b2b8-4dfa-a84c-d502d06cd0f6)
-
-- set lport to 5555 (port used by payload)
-
-![image](https://github.com/user-attachments/assets/6cb9ca0e-c198-42bd-9035-2706c1c53f1e)
-
-- Use show options command to display updated payload options
-
-![image](https://github.com/user-attachments/assets/89077835-01e8-4539-b706-c97a1d4aaf1e)
-
-- Run the exploit
-
-![image](https://github.com/user-attachments/assets/a65f8469-7f23-4f4f-8b70-8699da4c126e)
+---
 
 ***Use The Social-Engineer ToolKit (SET) to send the payload to the target***
-- Run SET and select option [1] Social-Engineering Attacks
+<div align="center">Run SET and select option [1] Social-Engineering Attacks</div>
+<p align="center"><img src=images/Picture12.jpg></p>
+<div align="center">Select option [5] Mass Mailer Attack</div>
+<p align="center"><img src=images/Picture13.jpg></p>
+<div align="center">Select option [1] E-Mail Attack Single Email Address</div>
+<p align="center"><img src=images/Picture14.jpg></p>
+<div align="center">Select option [2] One-Time Use Email Template</div>
+<p align="center"><img src=images/Picture15.jpg></p>
+<div align="center">Fill in all the information for the email</div>
+<p align="center"><img src=images/Picture16.png></p>
 
-![image](https://github.com/user-attachments/assets/9dca8624-683c-4421-ae70-6fa83d2e0b9d)
-
-- Select option [5] Mass Mailer Attack
-
-![image](https://github.com/user-attachments/assets/6bf02f71-6263-45a0-bc33-410dd373da28)
-
-- Select option [1] E-Mail Attack Single Email Address
-
-![image](https://github.com/user-attachments/assets/3bb8ea03-18f3-4d49-a66e-dcbfb172047c)
-
-- Select option [2] One-Time Use Email Template
-
-![image](https://github.com/user-attachments/assets/dc0dcfc0-10f9-45f7-a3e9-3e340d8b8835)
-
-- Fill in all the information for the email
-
-![image](https://github.com/user-attachments/assets/3d7f62e8-e074-4213-846c-c1c7a090148f)
+---
 
 ***Target View***
-- Email inbox view of target
+<div align="center">Email inbox view of target</div>
+<p align="center"><img src=images/Picture17.png></p>
+<div align="center">Email view with payload attached</div>
+<p align="center"><img src=images/Picture18.png></p>
+<div align="center">Target view after clicking link</div>
+<p align="center"><img src=images/Picture19.jpg></p>
+<div align="center">Pop up message displays when clicking the download file indicating that the file is harmful. For this demonstration, we will select keep</div>
+<p align="center"><img src=images/Picture20.jpg></p>
+<div align="center">Select open file</div>
+<p align="center"><img src=images/Picture21.jpg></p>
+<div align="center">Select Run</div>
+<p align="center"><img src=images/Picture22.jpg></p>
 
-![image](https://github.com/user-attachments/assets/ebd66aad-c5f7-449a-a846-80e610a2e1db)
-
-- Email view with payload attached
-
-![image](https://github.com/user-attachments/assets/a49dbf72-56e9-4bc3-a48b-7d4e2a456fac)
-
-- Target view after clicking link
-
-![image](https://github.com/user-attachments/assets/937f9483-2d0d-4525-8ed0-3352a6e8b13f)
-
-- Pop up message displays when clicking the download file indicating that the file is harmful. For this demonstration, we will select keep
-
- ![image](https://github.com/user-attachments/assets/312c7dd4-ee9b-43da-a7ab-6a4451ecdb34)
-
- - Select open file
-
-![image](https://github.com/user-attachments/assets/99333d71-621b-41fc-b810-4bdd2c933fdf)
-
-- Select Run
-
-![image](https://github.com/user-attachments/assets/c4ca96f7-5132-4d65-a82d-e4c7d50afec9)
+---
 
 ***Attacker View***
-- Check listener in msfconsole for reverse TCP successful connection
-
-![image](https://github.com/user-attachments/assets/4610f417-c50d-4c46-87ed-dd6fe3522079)
-
-- Use ```keyscan_start``` command to initiate keylogging process
-
-![image](https://github.com/user-attachments/assets/c2f390ab-4fbd-457c-b4f8-f956e01a510a)
-
-- Use ```keyscan_dump``` command to display the keystrokes that have been captured
-
-![image](https://github.com/user-attachments/assets/38353a57-6a3e-41d7-9dab-460d3cca4f63)
+<div align="center">Check listener in msfconsole for reverse TCP successful connection</div>
+<p align="center"><img src=images/Picture23.jpg></p>
+<div align="center">Use keyscan_start command to initiate keylogging process</div>
+<p align="center"><img src=images/Picture24.jpg></p>
+<div align="center">Use keyscan_dump command to display the keystrokes that have been captured</div>
+<p align="center"><img src=images/Picture25.jpg></p>
 
 ## Preventative Measures
 
