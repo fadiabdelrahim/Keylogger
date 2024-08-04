@@ -1,4 +1,4 @@
-***DISCLAIMER:*** *This is intended for ethical hacking educational purpose. Performing hacking attempts on computers that you do not own (without permission) is illegal! Do not attempt to gain access to devices that you do not own!*
+***DISCLAIMER:*** *This is intended for ethical hacking educational purpose. Performing hacking attempts on any computers that you do not own (without permission) is illegal! Do not attempt to gain access to devices that you do not own!*
 
 # <div align="center"> Keylogger</div>
 
