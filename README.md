@@ -1,4 +1,6 @@
-# <p align="center"> Keylogger
+***DISCLAIMER:*** *This is intended for ethical hacking educational purpose. Performing hacking attempts on computers that you do not own (without permission) is illegal! Do not attempt to gain access to devices that you do not own!*
+
+# <div align="center"> Keylogger</div>
 
 ## Introduction
 
@@ -136,3 +138,7 @@ I utilized the Metasploit Framework to deploy a keylogger. This method was chose
 ## Conclusion
 
 The keylogging project successfully demonstrated the vulnerabilities inherent in unprotected systems and the ease with which malicious actors can exploit these weaknesses using tools like the Metasploit Framework. Through the detailed execution of the exploit, it became evident that maintaining robust security measures, such as regular software updates, active antivirus solutions, and effective firewall configurations, are crucial in defending against such attacks. 
+
+## Full Disclaimer
+
+*Any action and or activities related to the material contained within this repository is solely your responsibility. The misuse of the tools and information in this repo could result in criminal charges being brought against the person in question. The author will not be held responsible in the event any criminal charges are brought against any individuals misusing the tools and information in this repository for malicious purpose or to break the law.*
